@@ -76,49 +76,462 @@
 
     </section>
 
-    <section>
+    <section class="container mx-auto my-20">
 
         <div class="space-y-3">
             <h1 class="text-5xl font-bold">Explore the <span class="text-[#eb489a]">Technologies</span></h1>
-            <p>Pick one technology per category to build your ideal stack.</p>
+            <p class="text-[20px]">Pick one technology per category to build your ideal stack.</p>
         </div>
 
-        <!-- cards parent div  -->
+        <!-- all cards  -->
 
-        <div>
+        <div class="grid grid-cols-12 mt-10">
 
-            <div class="w-full max-w-md rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
-                <div class="flex items-start justify-between">
-                    
-                    <div>
-                        <i class="fa-brands fa-react"></i>
+            <!-- cards parent div  -->
+
+            <div class="col-span-9 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+                <!-- react  -->
+
+                <div class="rounded-3xl border border-slate-200 bg-white p-2 shadow-sm">
+                    <div class="flex items-start justify-between">
+
+                        <div class="text-[#6eddfb]">
+                            <i class="fa-brands fa-react text-4xl"></i>
+                        </div>
+
+                        <span
+                            class="rounded-full border border-sky-100 bg-sky-50 px-4 py-1 text-lg font-medium text-sky-500">
+                            Popular
+                        </span>
                     </div>
 
-                    <span
-                        class="rounded-full border border-sky-100 bg-sky-50 px-4 py-1 text-lg font-medium text-sky-500">
-                        Popular
-                    </span>
+                    <h2 class="mt-4 text-2xl font-bold text-slate-950">React</h2>
+
+                    <p class="text-lg text-slate-500 pt-3">
+                        A declarative, component-based JavaScript library for building modern user interfaces.
+                    </p>
+
+                    <div class="mt-2 flex items-center justify-between border-y border-slate-100 py-2">
+                        <span class="bg-slate-50 px-3 py-1 font-medium text-slate-600">Frontend</span>
+                        <span class="text-slate-500">Beginner-Friendly</span>
+                        <span class="flex items-center gap-1 font-medium text-slate-700">
+                            <span class="text-amber-400">★</span>
+                            4.9
+                        </span>
+                    </div>
+
+                    <button
+                        class="mt-4 mb-4 w-full rounded-xl bg-slate-950 py-4 text-lg font-semibold text-white transition hover:bg-slate-800">
+                        Add to Stack
+                    </button>
                 </div>
 
-                <h2 class="mt-7 text-2xl font-bold text-slate-950">React</h2>
 
-                <p class="mt-3 text-lg leading-7 text-slate-500">
-                    A declarative, component-based JavaScript library for building modern user interfaces.
-                </p>
+                <!-- vue.js -->
 
-                <div class="mt-7 flex items-center justify-between border-y border-slate-100 py-2 text-base">
-                    <span class="bg-slate-50 px-3 py-1 font-medium text-slate-600">Frontend</span>
-                    <span class="text-slate-500">Beginner-Friendly</span>
-                    <span class="flex items-center gap-1 font-medium text-slate-700">
-                        <span class="text-amber-400">★</span>
-                        4.9
-                    </span>
+                <div class="rounded-3xl border border-slate-200 bg-white p-2 shadow-sm">
+                    <div class="flex items-start justify-between">
+
+                        <div class="text-[#42b883]">
+                            <i class="fa-brands fa-vuejs text-4xl"></i>
+                        </div>
+
+                        <span
+                            class="rounded-full border border-emerald-100 bg-emerald-50 px-4 py-1 text-lg font-medium text-emerald-500">
+                            Versatile
+                        </span>
+                    </div>
+
+                    <h2 class="mt-4 text-2xl font-bold text-slate-950">Vue.js</h2>
+
+                    <p class="pt-3 text-lg text-slate-500">
+                        An approachable, performant, and versatile
+                        framework for building web user interfaces.
+                    </p>
+
+                    <div class="mt-2 flex items-center justify-between border-y border-slate-100 py-2">
+                        <span class="bg-slate-50 px-3 py-1 font-medium text-slate-600">
+                            Frontend
+                        </span>
+
+                        <span class="text-slate-500">Beginner-Friendly</span>
+
+                        <span class="flex items-center gap-1 font-medium text-slate-700">
+                            <span class="text-amber-400">★</span>
+                            4.8
+                        </span>
+                    </div>
+
+                    <button
+                        class="mt-4 mb-4 w-full rounded-xl bg-slate-950 py-4 text-lg font-semibold text-white transition hover:bg-slate-800">
+                        Add to Stack
+                    </button>
                 </div>
 
-                <button
-                    class="mt-6 w-full rounded-xl bg-slate-950 py-4 text-lg font-semibold text-white transition hover:bg-slate-800">
-                    Add to Stack
-                </button>
+
+                <!-- svelte -->
+
+                <div class="rounded-3xl border border-slate-200 bg-white p-2 shadow-sm">
+                    <div class="flex items-start justify-between">
+
+                        <div class="text-[#ff3e00]">
+                            <i class="fa-solid fa-s text-4xl"></i>
+                        </div>
+
+                        <span
+                            class="rounded-full border border-orange-100 bg-orange-50 px-4 py-1 text-lg font-medium text-orange-500">
+                            Fast
+                        </span>
+                    </div>
+
+                    <h2 class="mt-4 text-2xl font-bold text-slate-950">Svelte</h2>
+
+                    <p class="pt-3 text-lg text-slate-500">
+                        Cybernetically enhanced web apps with
+                        compile-time reactivity and zero virtual
+                        DOM overhead.
+                    </p>
+
+                    <div class="mt-2 flex items-center justify-between border-y border-slate-100 py-2">
+                        <span class="bg-slate-50 px-3 py-1 font-medium text-slate-600">
+                            Frontend
+                        </span>
+
+                        <span class="text-slate-500">Intermediate</span>
+
+                        <span class="flex items-center gap-1 font-medium text-slate-700">
+                            <span class="text-amber-400">★</span>
+                            4.8
+                        </span>
+                    </div>
+
+                    <button
+                        class="mt-4 mb-4 w-full rounded-xl bg-slate-950 py-4 text-lg font-semibold text-white transition hover:bg-slate-800">
+                        Add to Stack
+                    </button>
+                </div>
+
+                <!-- Next.js -->
+
+                <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                    <div class="flex items-start justify-between">
+                        <div class="flex h-9 w-9 items-center justify-center rounded-full bg-black text-white">
+                            N
+                        </div>
+
+                        <span class="rounded-full bg-purple-50 px-3 py-1 text-sm font-medium text-purple-600">
+                            SSR / Edge
+                        </span>
+                    </div>
+
+                    <h2 class="mt-5 text-2xl font-bold text-slate-950">Next.js</h2>
+
+                    <p class="mt-3 text-sm leading-6 text-slate-500">
+                        The React framework for full-stack web applications with hybrid static
+                        &amp; server rendering.
+                    </p>
+
+                    <div class="mt-5 flex items-center justify-between border-y border-slate-100 py-2 text-sm">
+                        <span class="bg-slate-50 px-3 py-1 font-medium text-slate-600">Frontend</span>
+                        <span class="text-slate-500">Intermediate</span>
+                        <span class="flex items-center gap-1 font-medium text-slate-700">
+                            <span class="text-amber-400">★</span> 4.9
+                        </span>
+                    </div>
+
+                    <button
+                        class="mt-5 w-full rounded-xl bg-slate-950 py-3 font-semibold text-white hover:bg-slate-800">
+                        Add to Stack
+                    </button>
+                </div>
+
+
+                <!-- Node.js -->
+
+                <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                    <div class="flex items-start justify-between">
+                        <div class="text-3xl text-[#83cd29]">
+                            <i class="fa-brands fa-node-js"></i>
+                        </div>
+
+                        <span
+                            class="rounded-full border border-emerald-100 bg-emerald-50 px-3 py-1 text-sm font-medium text-emerald-600">
+                            Standard
+                        </span>
+                    </div>
+
+                    <h2 class="mt-5 text-2xl font-bold text-slate-950">Node.js</h2>
+
+                    <p class="mt-3 text-sm leading-6 text-slate-500">
+                        An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.
+                    </p>
+
+                    <div class="mt-5 flex items-center justify-between border-y border-slate-100 py-2 text-sm">
+                        <span class="bg-slate-50 px-3 py-1 font-medium text-slate-600">Backend</span>
+                        <span class="text-slate-500">Intermediate</span>
+                        <span class="flex items-center gap-1 font-medium text-slate-700">
+                            <span class="text-amber-400">★</span> 4.8
+                        </span>
+                    </div>
+
+                    <button
+                        class="mt-5 w-full rounded-xl bg-slate-950 py-3 font-semibold text-white hover:bg-slate-800">
+                        Add to Stack
+                    </button>
+                </div>
+
+
+                <!-- PostgreSQL -->
+
+                <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                    <div class="flex items-start justify-between">
+                        <div class="text-3xl text-[#336791]">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+
+                        <span
+                            class="rounded-full border border-blue-100 bg-blue-50 px-3 py-1 text-sm font-medium text-blue-500">
+                            Top SQL
+                        </span>
+                    </div>
+
+                    <h2 class="mt-5 text-2xl font-bold text-slate-950">PostgreSQL</h2>
+
+                    <p class="mt-3 text-sm leading-6 text-slate-500">
+                        A powerful, open-source object-relational database system with proven reliability.
+                    </p>
+
+                    <div class="mt-5 flex items-center justify-between border-y border-slate-100 py-2 text-sm">
+                        <span class="bg-slate-50 px-3 py-1 font-medium text-slate-600">Database</span>
+                        <span class="text-slate-500">Intermediate</span>
+                        <span class="flex items-center gap-1 font-medium text-slate-700">
+                            <span class="text-amber-400">★</span> 4.9
+                        </span>
+                    </div>
+
+                    <button
+                        class="mt-5 w-full rounded-xl bg-slate-950 py-3 font-semibold text-white hover:bg-slate-800">
+                        Add to Stack
+                    </button>
+                </div>
+
+                <!-- Redis -->
+
+                <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                    <div class="flex items-start justify-between">
+                        <div class="text-3xl text-[#dc382d]">
+                            <i class="fa-brands fa-redis"></i>
+                        </div>
+
+                        <span
+                            class="rounded-full border border-red-100 bg-red-50 px-3 py-1 text-sm font-medium text-red-500">
+                            Cache
+                        </span>
+                    </div>
+
+                    <h2 class="mt-5 text-2xl font-bold text-slate-950">Redis</h2>
+
+                    <p class="mt-3 text-sm leading-6 text-slate-500">
+                        In-memory data structure store used as a high-speed database, cache, and message broker.
+                    </p>
+
+                    <div class="mt-5 flex items-center justify-between border-y border-slate-100 py-2 text-sm">
+                        <span class="bg-slate-50 px-3 py-1 font-medium text-slate-600">Database</span>
+                        <span class="text-slate-500">Intermediate</span>
+                        <span class="flex items-center gap-1 font-medium text-slate-700">
+                            <span class="text-amber-400">★</span> 4.8
+                        </span>
+                    </div>
+
+                    <button
+                        class="mt-5 w-full rounded-xl bg-slate-950 py-3 font-semibold text-white hover:bg-slate-800">
+                        Add to Stack
+                    </button>
+                </div>
+
+
+                <!-- JavaScript -->
+
+                <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                    <div class="flex items-start justify-between">
+                        <div
+                            class="flex h-8 w-8 items-center justify-center bg-[#f7df1e] text-lg font-bold text-slate-900">
+                            JS
+                        </div>
+
+                        <span
+                            class="rounded-full border border-amber-100 bg-amber-50 px-3 py-1 text-sm font-medium text-amber-500">
+                            Ubiquitous
+                        </span>
+                    </div>
+
+                    <h2 class="mt-5 text-2xl font-bold text-slate-950">JavaScript</h2>
+
+                    <p class="mt-3 text-sm leading-6 text-slate-500">
+                        The versatile, ubiquitous scripting language powering dynamic behavior across the web.
+                    </p>
+
+                    <div class="mt-5 flex items-center justify-between border-y border-slate-100 py-2 text-sm">
+                        <span class="bg-slate-50 px-3 py-1 font-medium text-slate-600">Language</span>
+                        <span class="text-slate-500">Beginner-Friendly</span>
+                        <span class="flex items-center gap-1 font-medium text-slate-700">
+                            <span class="text-amber-400">★</span> 4.9
+                        </span>
+                    </div>
+
+                    <button
+                        class="mt-5 w-full rounded-xl bg-slate-950 py-3 font-semibold text-white hover:bg-slate-800">
+                        Add to Stack
+                    </button>
+                </div>
+
+
+                <!-- TypeScript -->
+
+                <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                    <div class="flex items-start justify-between">
+                        <div class="flex h-8 w-8 items-center justify-center bg-[#3178c6] text-lg font-bold text-white">
+                            TS
+                        </div>
+
+                        <span
+                            class="rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-sm font-medium text-sky-600">
+                            Essential
+                        </span>
+                    </div>
+
+                    <h2 class="mt-5 text-2xl font-bold text-slate-950">TypeScript</h2>
+
+                    <p class="mt-3 text-sm leading-6 text-slate-500">
+                        A strongly typed programming language that builds on JavaScript for robust tooling.
+                    </p>
+
+                    <div class="mt-5 flex items-center justify-between border-y border-slate-100 py-2 text-sm">
+                        <span class="bg-slate-50 px-3 py-1 font-medium text-slate-600">Language</span>
+                        <span class="text-slate-500">Intermediate</span>
+                        <span class="flex items-center gap-1 font-medium text-slate-700">
+                            <span class="text-amber-400">★</span> 4.9
+                        </span>
+                    </div>
+
+                    <button
+                        class="mt-5 w-full rounded-xl bg-slate-950 py-3 font-semibold text-white hover:bg-slate-800">
+                        Add to Stack
+                    </button>
+                </div>
+
+
+                <!-- Java -->
+
+                <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                    <div class="flex items-start justify-between">
+                        <div class="text-3xl text-[#ea2d2e]">
+                            <i class="fa-brands fa-java"></i>
+                        </div>
+
+                        <span
+                            class="rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-sm font-medium text-sky-600">
+                            Robust
+                        </span>
+                    </div>
+
+                    <h2 class="mt-5 text-2xl font-bold text-slate-950">Java</h2>
+
+                    <p class="mt-3 text-sm leading-6 text-slate-500">
+                        A secure, object-oriented programming language designed for portability and scale.
+                    </p>
+
+                    <div class="mt-5 flex items-center justify-between border-y border-slate-100 py-2 text-sm">
+                        <span class="bg-slate-50 px-3 py-1 font-medium text-slate-600">Language</span>
+                        <span class="text-slate-500">Intermediate</span>
+                        <span class="flex items-center gap-1 font-medium text-slate-700">
+                            <span class="text-amber-400">★</span> 4.6
+                        </span>
+                    </div>
+
+                    <button
+                        class="mt-5 w-full rounded-xl bg-slate-950 py-3 font-semibold text-white hover:bg-slate-800">
+                        Add to Stack
+                    </button>
+                </div>
+
+
+                <!-- Tailwind CSS -->
+
+                <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                    <div class="flex items-start justify-between">
+                        <div class="text-3xl text-[#38bdf8]">
+                            <i class="fa-solid fa-wind"></i>
+                        </div>
+
+                        <span
+                            class="rounded-full border border-cyan-100 bg-cyan-50 px-3 py-1 text-sm font-medium text-cyan-600">
+                            Modern
+                        </span>
+                    </div>
+
+                    <h2 class="mt-5 text-2xl font-bold text-slate-950">Tailwind CSS</h2>
+
+                    <p class="mt-3 text-sm leading-6 text-slate-500">
+                        A utility-first CSS framework packed with classes that can be composed to build custom UI.
+                    </p>
+
+                    <div class="mt-5 flex items-center justify-between border-y border-slate-100 py-2 text-sm">
+                        <span class="bg-slate-50 px-3 py-1 font-medium text-slate-600">Styling</span>
+                        <span class="text-slate-500">Beginner-Friendly</span>
+                        <span class="flex items-center gap-1 font-medium text-slate-700">
+                            <span class="text-amber-400">★</span> 4.9
+                        </span>
+                    </div>
+
+                    <button
+                        class="mt-5 w-full rounded-xl bg-slate-950 py-3 font-semibold text-white hover:bg-slate-800">
+                        Add to Stack
+                    </button>
+                </div>
+
+
+                <!-- Docker -->
+
+                <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                    <div class="flex items-start justify-between">
+                        <div class="text-3xl text-[#2496ed]">
+                            <i class="fa-brands fa-docker"></i>
+                        </div>
+
+                        <span
+                            class="rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-sm font-medium text-sky-600">
+                            Containers
+                        </span>
+                    </div>
+
+                    <h2 class="mt-5 text-2xl font-bold text-slate-950">Docker</h2>
+
+                    <p class="mt-3 text-sm leading-6 text-slate-500">
+                        A platform designed to build, share, and run containerized applications reliably.
+                    </p>
+
+                    <div class="mt-5 flex items-center justify-between border-y border-slate-100 py-2 text-sm">
+                        <span class="bg-slate-50 px-3 py-1 font-medium text-slate-600">DevOps</span>
+                        <span class="text-slate-500">Intermediate</span>
+                        <span class="flex items-center gap-1 font-medium text-slate-700">
+                            <span class="text-amber-400">★</span> 4.9
+                        </span>
+                    </div>
+
+                    <button
+                        class="mt-5 w-full rounded-xl bg-slate-950 py-3 font-semibold text-white hover:bg-slate-800">
+                        Add to Stack
+                    </button>
+                </div>
+
+
+
+            </div>
+
+            <div class="col-span-3">
+                your stck card
             </div>
 
         </div>
