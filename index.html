@@ -13,15 +13,16 @@
 </head>
 
 <body>
+
     <section class="container mx-auto m-4">
-        <nav class="flex items-center justify-between">
+        <nav class="fixed top-0 left-0 z-50 flex w-full items-center justify-between bg-white px-8 py-4 shadow-sm">
 
             <div>
                 <img src="./assets/logo-text.png" alt="">
             </div>
 
             <div>
-                <ul class="flex items-center gap-4 md:flex">
+                <ul class="flex items-center gap-4 md:flex text-[#475569]">
                     <li class="text-[#db2777]"><a href="#">Home</a></li>
                     <li><a href="#">Technologies</a></li>
                     <li><a href="#">Projects</a></li>
@@ -55,15 +56,18 @@
                         class="bg-linear-to-r from-orange-500 via-pink-600 to-purple-600 bg-clip-text text-transparent">Development
                         Stack</span>
                 </h1>
-                <p class="text-[#475569]">
+                <p class="text-[#475569] text-[20px]">
                     Explore frontend, backend, database, and tooling options,
                     compare them side by side, and put together the stack that fits your
                     next project.
                 </p>
                 <div class="grid grid-cols-2 gap-2 md:gap-4">
-                    <button class="bg-linear-to-r from-[#f9721b] to-[#ed4a96] text-white p-2 rounded-xl">Explore
+                    <button
+                        class="bg-linear-to-r from-[#f9721b] to-[#ed4a96] text-white p-2 rounded-xl hover:bg-linear-to-l from-[#f9721b] to-[#ed4a96] cursor-pointer">Explore
                         Technologies</button>
-                    <button class="border border-[#e5e7eb] text-[#475569] rounded-xl py-2 px-13">Learn More</button>
+                    <button
+                        class="border border-[#e5e7eb] text-[#475569] rounded-xl py-2 px-13 hover:bg-[#c595c4] cursor-pointer">Learn
+                        More</button>
                 </div>
 
             </div>
@@ -72,20 +76,20 @@
                 <img src="./assets/banner-stack.png" alt="">
             </div>
 
-        </div>
 
+        </div>
     </section>
 
     <section class="container mx-auto my-20">
 
         <div class="space-y-3">
             <h1 class="text-5xl font-bold">Explore the <span class="text-[#eb489a]">Technologies</span></h1>
-            <p class="text-[20px]">Pick one technology per category to build your ideal stack.</p>
+            <p class="text-[20px] text-[#475569]">Pick one technology per category to build your ideal stack.</p>
         </div>
 
         <!-- all cards  -->
 
-        <div class="grid grid-cols-12 mt-10">
+        <div class="grid grid-cols-12 mt-10 gap-4">
 
             <!-- cards parent div  -->
 
@@ -531,11 +535,121 @@
             </div>
 
             <div class="col-span-3">
-                your stck card
+                <!-- Your Stack / Cart Section -->
+                <aside class="w-full rounded-3xl border border-slate-200 bg-white p-6 shadow-sm lg:sticky lg:top-6">
+                    <h2 class="text-2xl font-bold text-slate-900">Your Stack</h2>
+
+                    <!-- নির্বাচিত card-এর সংখ্যা এখানে পরিবর্তন করবেন -->
+                    <p class="mt-1 text-sm text-slate-400">2 Technology Selected</p>
+
+                    <!-- Added cards container -->
+                    <!-- নতুন card এখানে যোগ হবে। বেশি হলে scroll হবে। -->
+                    <div class="mt-5 max-h-72 space-y-3 overflow-y-auto pr-1">
+
+                        <!-- Selected card: Svelte -->
+                        <div class="flex items-center justify-between rounded-xl border border-slate-200 px-4 py-3">
+                            <div class="flex items-center gap-3">
+                                <div class="text-3xl text-[#ff3e00]">
+                                    <i class="fa-solid fa-s"></i>
+                                </div>
+
+                                <div>
+                                    <h3 class="font-semibold text-slate-900">Svelte</h3>
+                                    <p class="text-xs text-slate-400">Frontend</p>
+                                </div>
+                            </div>
+
+                            <!-- Remove one card -->
+                            <button type="button" aria-label="Remove Svelte"
+                                class="flex h-8 w-8 items-center justify-center rounded-lg text-slate-400 transition hover:bg-red-50 hover:text-red-500">
+                                <i class="fa-solid fa-xmark text-xl"></i>
+                            </button>
+                        </div>
+
+                        <!-- Selected card: Redis -->
+                        <div class="flex items-center justify-between rounded-xl border border-slate-200 px-4 py-3">
+                            <div class="flex items-center gap-3">
+                                <div class="text-3xl text-[#dc382d]">
+                                    <i class="fa-brands fa-redis"></i>
+                                </div>
+
+                                <div>
+                                    <h3 class="font-semibold text-slate-900">Redis</h3>
+                                    <p class="text-xs text-slate-400">Database</p>
+                                </div>
+                            </div>
+
+                            <!-- Remove one card -->
+                            <button type="button" aria-label="Remove Redis"
+                                class="flex h-8 w-8 items-center justify-center rounded-lg text-slate-400 transition hover:bg-red-50 hover:text-red-500">
+                                <i class="fa-solid fa-xmark text-xl"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <!-- সব card মুছে দেওয়ার button -->
+                    <button type="button"
+                        class="mt-14 w-full rounded-xl border border-red-300 py-3 font-semibold text-red-500 transition hover:bg-red-500 hover:text-white">
+                        Remove All
+                    </button>
+                </aside>
             </div>
 
         </div>
     </section>
+
+    <section class="container mx-auto my-35">
+    <footer class="text-[#475569]">
+
+        <div class="grid grid-cols-4 justify-between md:gap-18">
+
+            <div class="space-y-4">
+                <img src="./assets/logo-text.png" alt="">
+                <p>
+                    Curated tools, technologies and resources for developers building
+                    modern software.
+                </p>
+                <ul  class="font-semibold flex gap-2">
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="space-y-4">
+                    <li class="font-semibold text-black">PRODUCT</li>
+                    <li>Home</li>
+                    <li>Technologies</li>
+                    <li>Projects</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="space-y-4">
+                    <li class="font-semibold text-black">COMPANY</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="space-y-4">
+                    <li class="font-semibold text-black">LEGAL</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                </ul>
+            </div>
+
+        </div>
+
+       <p class="mt">&#169; 2026 Dev Stack. All rights reserved.</p>
+
+    </footer>
+    </section>
+
 </body>
 
 </html>
