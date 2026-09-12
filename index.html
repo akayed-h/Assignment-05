@@ -9,31 +9,31 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="container mx-auto">
+    <section class="container mx-auto m-4">
         <nav class="flex items-center justify-between">
+            
             <div>
                 <img src="./assets/logo-text.png" alt="">
             </div>
+            
             <div>
-                <ul>
-                    <li>Home</li>
-                    <li>Technologies</li>
-                    <li>Projects</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                <ul class="flex gap-2.5 items-center gap-4 md:flex">
+                    <li class="text-[#db2777]"><a href="#">Home</a></li>
+                    <li><a href="#">Technologies</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
+
+              
             </div>
-            echo "# Assignment-05" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin git@github.com:akayed-h/Assignment-05.git
-git push -u origin main
-            <div>
-                <button>Sign In</button>
-                <button>Sign Up</button>
+            
+            <div class="flex gap-2.5">
+                <button class="font-semibold rounded-3xl px-2 py-1.5 hover:text-[#be43bc] cursor-pointer">Sign Up</button>
+                
+                <button class="bg-[#d91b7e] text-white font-semibold rounded-3xl px-2 py-1.5 hover:bg-[#be43bc] cursor-pointer">Sign Up</button>
             </div>
+
         </nav>
     </section>
 </body>
