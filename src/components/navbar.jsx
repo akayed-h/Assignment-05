@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-const NAV_LINKS = ["Home", "Technologies", "Projects", "About", "Contact"];
+const NAV_LINKS = ["Home", "Technologies", "Projects", "About", "Contact"]
 
 export default function Navbar() {
-    const [menuOpen, setMenuOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false)
 
     return (
         <nav className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur px-6 py-4 shadow-sm">

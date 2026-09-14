@@ -1,5 +1,5 @@
 export default function TechCard({ tech, isAdded, onAdd }) {
-  const { name, category, description, icon, rating, difficulty, badge } = tech;
+  const { name, category, description, icon, rating, difficulty, badge } = tech
 
   return (
     <div
