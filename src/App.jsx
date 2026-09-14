@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TechGrid from "./components/TechGrid";
 import YourStack from "./components/YourStack";
-
+import Footer from "./components/Footer";
 
 function App() {
   
@@ -89,7 +89,7 @@ function App() {
         </div>
       </section>
 
-      
+      <Footer />
 
       <ToastContainer position="top-right" autoClose={2500} />
     </div>
