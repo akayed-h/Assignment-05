@@ -20,5 +20,5 @@ export default function TechGrid({ technologies, stack, onAdd, loading }) {
         />
       ))}
     </div>
-  );
+  )
 }

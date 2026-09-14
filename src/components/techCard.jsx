@@ -15,14 +15,14 @@ export default function TechCard({ tech, isAdded, onAdd }) {
 
       <h2 className="mt-4 text-xl font-bold text-slate-950">{name}</h2>
 
-      <p className="mt-2 text-sm text-slate-500 flex-1">{description}</p>
+      <p className="mt-2 text-sm text-[#64748B] flex-1">{description}</p>
 
       <div className="mt-4 flex items-center justify-between border-y border-slate-100 py-2 text-sm">
-        <span className="bg-slate-50 px-3 py-1 font-medium text-slate-600 rounded-full">
+        <span className="bg-slate-50 px-3 py-1 font-medium text-[#64748B] rounded-full">
           {category}
         </span>
-        <span className="text-slate-500">{difficulty}</span>
-        <span className="flex items-center gap-1 font-medium text-slate-700">
+        <span className="text-[#64748B]">{difficulty}</span>
+        <span className="flex items-center gap-1 font-medium text-[#334155]">
           <span className="text-amber-400">★</span>
           {rating}
         </span>
