@@ -9,7 +9,7 @@ export default function Navbar() {
         <nav className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur px-6 py-4 shadow-sm">
             <div className="container mx-auto flex items-center justify-between">
                 <button
-                    className="md:hidden text-2xl text-slate-700"
+                    className="md:hidden text-2xl text-[#334155]"
                     aria-label="Toggle menu"
                     onClick={() => setMenuOpen((open) => !open)}
                 >
@@ -20,7 +20,7 @@ export default function Navbar() {
                     <img src="/assets/logo-text.png" alt="" className="h-8" />
                 </div>
 
-                <ul className="hidden md:flex items-center gap-6 text-slate-600 font-medium">
+                <ul className="hidden md:flex items-center gap-6 text-[#475569] font-medium">
                     {NAV_LINKS.map((link, index) => (
                         <li
                             key={link}
@@ -42,7 +42,7 @@ export default function Navbar() {
             </div>
 
             {menuOpen && (
-                <ul className="md:hidden mt-4 flex flex-col gap-3 text-slate-600 font-medium">
+                <ul className="md:hidden mt-4 flex flex-col gap-3 text-[#475569] font-medium">
                     {NAV_LINKS.map((link) => (
                         <li key={link} className="hover:text-pink-600 cursor-pointer">
                             {link}
