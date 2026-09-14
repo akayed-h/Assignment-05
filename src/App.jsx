@@ -2,11 +2,19 @@ import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+<<<<<<< HEAD
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import TechGrid from "./components/techGrid";
 import YourStack from "./components/yourStack";
 import Footer from "./components/footer";
+=======
+import Navbar from "./components/Navbar.jsx";
+import Hero from "./components/Hero.jsx";
+import TechGrid from "./components/TechGrid.jsx";
+import YourStack from "./components/YourStack.jsx";
+import Footer from "./components/Footer.jsx";
+>>>>>>> 81e53437737b67be500b779dc7d96c991dc33150
 
 function App() {
   
