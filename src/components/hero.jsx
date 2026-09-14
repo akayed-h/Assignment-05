@@ -13,7 +13,7 @@ export default function Hero() {
             project.
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="brand-gradient-bg text-white font-semibold px-6 py-3 rounded-xl hover: bg-[#475569] cursor-pointer">
+            <button className="brand-gradient-bg text-white font-semibold px-6 py-3 rounded-xl hover:opacity-90 cursor-pointer">
               Explore Technologies
             </button>
             <button className="border border-[#E2E8F0] text-[#475569] font-semibold px-6 py-3 rounded-xl hover:bg-slate-50 cursor-pointer">

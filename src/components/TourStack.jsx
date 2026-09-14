@@ -33,10 +33,7 @@ export default function YourStack({ stack, onRemove, onRemoveAll }) {
                 onClick={() => onRemove(item.id)}
                 className="flex h-8 w-8 items-center justify-center rounded-lg text-slate-400 transition hover:bg-red-50 hover:text-red-500 cursor-pointer"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-                  <line x1="5" y1="5" x2="19" y2="19" />
-                  <line x1="19" y1="5" x2="5" y2="19" />
-                </svg>
+                <i className="fa-solid fa-xmark text-lg"></i>
               </button>
             </div>
           ))

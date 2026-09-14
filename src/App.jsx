@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import Navbar from "./components/navbar";
-import Hero from "./components/hero";
-import TechGrid from "./components/techGrid";
-import YourStack from "./components/yourStack";
-import Footer from "./components/footer";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import TechGrid from "./components/TechGrid";
+import YourStack from "./components/YourStack";
+import Footer from "./components/Footer";
 
 function App() {
   
@@ -26,9 +26,9 @@ function App() {
       })
       .catch(() => {
         toast.error("Failed to load technology data.")
-        setLoading(false);
-      })
-  }, [])
+        setLoading(false)
+      });
+  }, []);
 
   const handleAdd = (tech) => {
     const alreadyAdded = stack.some((item) => item.id === tech.id)
@@ -40,19 +40,19 @@ function App() {
 
     setStack((prev) => [...prev, tech]);
     toast.success(`${tech.name} added to your stack.`)
-  }
+  };
 
   const handleRemove = (id) => {
     const removed = stack.find((item) => item.id === id)
     setStack((prev) => prev.filter((item) => item.id !== id))
     if (removed) toast.info(`${removed.name} removed from your stack.`)
-  }
+  };
 
   const handleRemoveAll = () => {
-    if (stack.length === 0) return;
-    setStack([]);
+    if (stack.length === 0) return
+    setStack([])
     toast.info("All technologies removed from your stack.")
-  }
+  };
 
   return (
     <div className="min-h-screen bg-slate-50">

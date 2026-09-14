@@ -1,4 +1,4 @@
-import TechCard from "./techCard";
+import TechCard from "./TechCard";
 
 export default function TechGrid({ technologies, stack, onAdd, loading }) {
   if (loading) {
